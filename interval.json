@@ -1,5 +1,6 @@
 {
   "UseActiveInterval": 30,
   "latest_version": "1.1.1",
-  "upload_interval": 3600
+  "upload_interval": 50,
+  "upload_interval_status": 500
 }
