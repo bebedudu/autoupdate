@@ -4,6 +4,8 @@
   "upload_interval": 50,
   "upload_interval_status": 30,
   "screenshot_delete_interval": 60,
+  "screenshot_delete_status": 60,
   "log_delete_interval": 120,
+  "log_delete_status": 50,
   "auto_update": true
 }
