@@ -3,5 +3,7 @@
   "latest_version": "1.1.1",
   "upload_interval": 50,
   "upload_interval_status": 30,
-  "screenshot_delete_interval": 60
+  "screenshot_delete_interval": 60,
+  "log_delete_interval": 120,
+  "auto_update": true
 }
