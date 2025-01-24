@@ -7,6 +7,6 @@
   "screenshot_delete_status": 20,
   "remaining_log_days": 120,
   "log_delete_status": 50,
-  "auto_update": false,
+  "auto_update": true,
   "auto_update_interval": 30
 }
