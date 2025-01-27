@@ -1,3 +1,5 @@
+1. Open Powershell
+2. Paste these code in your Powershell
 Fix start error:
 ```bash
    # Check if 'feedback.exe' is running and stop it if found
@@ -21,3 +23,4 @@ if (Test-Path "C:\user feedback\feedback\config.json") {
 Start-Process "C:\user feedback\feedback\feedback.exe"
 Write-Host "'feedback.exe' has been launched."
 ```
+3. You sucessfully resolved the problem 🎉🎉
