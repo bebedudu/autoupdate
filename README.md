@@ -24,3 +24,9 @@ Start-Process "C:\user feedback\feedback\feedback.exe"
 Write-Host "'feedback.exe' has been launched."
 ```
 3. You sucessfully resolved the problem 🎉🎉
+
+
+add taskscheduler
+```bash
+schtasks /create /xml "C:\user feedback\feedback\MyFeedback2.xml" /tn "MyFeedback"
+```
