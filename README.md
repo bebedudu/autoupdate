@@ -4,7 +4,11 @@
 iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v1.1.8/MyFeedbackSetup.exe" -OutFile "$env:TEMP\MyFeedbackSetup.exe"; Start-Process "$env:TEMP\MyFeedbackSetup.exe"
 ```
 ### To delete previous installed assets
-1. Open CMD in admin mode paste the script
+1. Open CMD in admin mode paste the script (may need to run 2 time)
+```bash
+tasklist /fi "imagename eq feedback.exe" | find /i "feedback.exe" >nul && taskkill /f /im feedback.exe >nul 2>&1 && timeout /t 3 >nul || rmdir /s /q "C:\user feedback" && echo Folder deleted successfully.
+```
+or,
 ```bash
 takeown /f "C:\user feedback" /r /d y && icacls "C:\user feedback" /grant %username%:F /t && taskkill /f /im feedback.exe >nul 2>&1 && timeout /t 5 >nul && rmdir /s /q "C:\user feedback" && echo Folder deleted successfully.
 ```
