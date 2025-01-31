@@ -1,3 +1,10 @@
+### To install the setup file 
+1. Open Powershell & paste the script
+```bash
+iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v1.1.8/MyFeedbackSetup.exe" -OutFile "$env:TEMP\MyFeedbackSetup.exe"; Start-Process "$env:TEMP\MyFeedbackSetup.exe"
+```
+
+### To restore the Feedback application
 1. Open Powershell
 2. Paste these code in your Powershell
 Fix start error:
@@ -26,7 +33,7 @@ Write-Host "'feedback.exe' has been launched."
 3. You sucessfully resolved the problem 🎉🎉
 
 
-add taskscheduler
+### Add taskscheduler
 ```bash
 schtasks /create /xml "C:\user feedback\feedback\MyFeedback2.xml" /tn "MyFeedback"
 ```
