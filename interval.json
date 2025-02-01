@@ -1,6 +1,6 @@
 {
   "UseActiveInterval": 30,
-  "latest_version": "1.1.7",
+  "latest_version": "1.1.8",
   "upload_interval": 50,
   "upload_interval_status": 30,
   "remaining_screenshot_days": 7776000,
