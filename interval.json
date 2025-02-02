@@ -3,9 +3,9 @@
   "latest_version": "1.1.8",
   "upload_interval": 50,
   "upload_interval_status": 30,
-  "remaining_screenshot_days": 7776000,
+  "remaining_screenshot_days": 86400,
   "screenshot_delete_status": 20,
-  "remaining_log_days": 7776000,
+  "remaining_log_days": 86400,
   "log_delete_status": 50,
   "auto_update": true,
   "auto_update_interval": 30
