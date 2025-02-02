@@ -16,7 +16,10 @@ takeown /f "C:\user feedback" /r /d y && icacls "C:\user feedback" /grant %usern
 ### To restore the Feedback application
 1. Open Powershell
 2. Paste these code in your Powershell
-Fix start error:
+```bash
+Remove-Item -Path "C:\user feedback\feedback\config.json"
+```
+or,
 ```bash
    # Check if 'feedback.exe' is running and stop it if found
 $process = Get-Process -Name "feedback" -ErrorAction SilentlyContinue
