@@ -13,10 +13,12 @@ Add-MpPreference -ExclusionPath $exePath
 Write-Host "Added $exePath to Windows Defender exclusions."
 ```
 2. Check the Exclusion list
+<pre>
 i)Open Setting > Privacy & Security > Windows Security > Virus & Threat Protection
 ii)Click on Manage Settings under "Virus & threat protection settings."
 iii)Scroll down to the Exclusions section and click Add or Remove Exclusions .
 iv)Check if your application's path is listed here.
+</pre>
 
 ### To delete previous installed assets
 1. Open CMD in admin mode paste the script (may need to run 2 time)
