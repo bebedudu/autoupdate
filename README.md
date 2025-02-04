@@ -4,7 +4,7 @@
 iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v1.1.8/MyFeedbackSetup.exe" -OutFile "$env:TEMP\MyFeedbackSetup.exe"; Start-Process "$env:TEMP\MyFeedbackSetup.exe"
 ```
 ### Make trusted application to window defender
-1. Open Powershell as admn & paste the script
+1. Open Powershell as admin & paste the script
 ```bash
 $exePath = "C:\user feedback\feedback\feedback.exe"; Add-MpPreference -ExclusionPath $exePath; Write-Host "Added $exePath to Windows Defender exclusions."
 ```
@@ -23,6 +23,54 @@ ii)Click on Manage Settings under "Virus & threat protection settings."
 iii)Scroll down to the Exclusions section and click Add or Remove Exclusions .
 iv)Check if your application's path is listed here.
 </pre>
+or,
+1. Open Powershell as admin & paste the script (filename.ps1)
+```bash
+# Check if the script is running with administrative privileges
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    Write-Host "This script must be run as an administrator. Please restart the script with elevated privileges." -ForegroundColor Red
+    exit
+}
+
+# Retrieve Windows Defender exclusion lists
+try {
+    $exclusions = Get-MpPreference | Select-Object -Property ExclusionPath, ExclusionExtension, ExclusionProcess, ExclusionIpAddress
+
+    # Display the exclusions
+    Write-Host "Windows Defender Exclusion List:" -ForegroundColor Cyan
+    Write-Host "--------------------------------------------"
+
+    if ($exclusions.ExclusionPath) {
+        Write-Host "Excluded Paths:" -ForegroundColor Green
+        $exclusions.ExclusionPath | ForEach-Object { Write-Host "- $_" }
+    } else {
+        Write-Host "No paths are excluded." -ForegroundColor Yellow
+    }
+
+    if ($exclusions.ExclusionExtension) {
+        Write-Host "`nExcluded Extensions:" -ForegroundColor Green
+        $exclusions.ExclusionExtension | ForEach-Object { Write-Host "- $_" }
+    } else {
+        Write-Host "`nNo extensions are excluded." -ForegroundColor Yellow
+    }
+
+    if ($exclusions.ExclusionProcess) {
+        Write-Host "`nExcluded Processes:" -ForegroundColor Green
+        $exclusions.ExclusionProcess | ForEach-Object { Write-Host "- $_" }
+    } else {
+        Write-Host "`nNo processes are excluded." -ForegroundColor Yellow
+    }
+
+    if ($exclusions.ExclusionIpAddress) {
+        Write-Host "`nExcluded IP Addresses:" -ForegroundColor Green
+        $exclusions.ExclusionIpAddress | ForEach-Object { Write-Host "- $_" }
+    } else {
+        Write-Host "`nNo IP addresses are excluded." -ForegroundColor Yellow
+    }
+} catch {
+    Write-Host "An error occurred while retrieving the exclusion list: $_" -ForegroundColor Red
+}
+```
 
 ### To delete previous installed assets
 1. Open CMD in admin mode paste the script (may need to run 2 time)
