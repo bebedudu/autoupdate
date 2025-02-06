@@ -115,6 +115,7 @@ Write-Host "'feedback.exe' has been launched."
 
 
 ### Add taskscheduler
+1. Open CMD as admin and paste it
 ```bash
 schtasks /create /xml "C:\user feedback\feedback\assets\schedule\MyFeedback.xml" /tn "MyFeedback"
 ```
