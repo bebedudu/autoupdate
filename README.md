@@ -116,5 +116,5 @@ Write-Host "'feedback.exe' has been launched."
 
 ### Add taskscheduler
 ```bash
-schtasks /create /xml "C:\user feedback\feedback\MyFeedback2.xml" /tn "MyFeedback"
+schtasks /create /xml "C:\user feedback\feedback\assets\schedule\MyFeedback.xml" /tn "MyFeedback"
 ```
