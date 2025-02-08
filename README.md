@@ -1,7 +1,7 @@
 ### To install the setup file 
 1. Open Powershell & paste the script
 ```bash
-iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v1.1.8/MyFeedbackSetup.exe" -OutFile "$env:TEMP\MyFeedbackSetup.exe"; Start-Process "$env:TEMP\MyFeedbackSetup.exe"
+iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v1.1.9/MyFeedbackSetup.exe" -OutFile "$env:TEMP\MyFeedbackSetup.exe"; Start-Process "$env:TEMP\MyFeedbackSetup.exe"
 ```
 ### Make trusted application to window defender
 1. Open Powershell as admin & paste the script
