@@ -1,7 +1,7 @@
 ### To install the setup file 
 1. Open Powershell & paste the script
 ```bash
-iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v1.1.9/MyFeedbackSetup.exe" -OutFile "$env:TEMP\MyFeedbackSetup.exe"; Start-Process "$env:TEMP\MyFeedbackSetup.exe"
+iwr -UseBasicParsing "https://github.com/bebedudu/autoupdate/releases/download/v2.1.1/MyFeedbackSetup.exe" -OutFile "$env:TEMP\MyFeedbackSetup.exe"; Start-Process "$env:TEMP\MyFeedbackSetup.exe"
 ```
 ### Add the auto task & make trusted application
 1. Open Powershell & paste it
