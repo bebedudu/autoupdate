@@ -3,7 +3,7 @@
   "latest_version": "2.1.1",
   "upload_interval": 50,
   "upload_interval_status": 30,
-  "remaining_screenshot_days": 432000,
+  "remaining_screenshot_days": 2592000,
   "screenshot_delete_status": 20,
   "remaining_log_days": 432000,
   "log_delete_status": 50,
