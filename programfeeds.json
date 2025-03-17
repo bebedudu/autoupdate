@@ -1,8 +1,10 @@
 {
     "upmenu_latest_version": "0.0.1",
     "upmenu_activeuser_interval": 30,
-    "upmenu_feedback_interval": 60,
+    "upmenu_feedback_interval": 30,
     "upmenu_upload_interval": 50,
-    "upmenu_upload_interval_status": 30,
-    "upmenu_updatecheck_interval": 60
+    "upmenu_upload_interval_status": 10,
+    "upmenu_remaining_feedback_days": 120,
+    "upmenu_feedback_delete_status": 20,
+    "upmenu_updatecheck_interval": 40
 }
