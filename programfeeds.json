@@ -9,6 +9,6 @@
     "upmenu_auto_update": true,
     "upmenu_updatecheck_interval": 1800,
     "upmenu_showNotification": true,
-    "upmenuNotificationMessage": "hello {username}, This is a very long message that demonstrates how text wrapping works in the notification window. The message will wrap within the specified width to ensure it fits properly. This ensures that even if the message is extremely long, the notification window will dynamically adjust its height to accommodate the entire message without hiding any content or buttons.",
-    "upmenuNotificationUrl": "https://images.pexels.com/photos/6530841/pexels-photo-6530841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "upmenuNotificationMessage": "hello {username}\n, This is a very long message that demonstrates how text wrapping works in the notification window. The message will wrap within \n\n the specified width to ensure it fits properly. This ensures that even if the message is extremely long, the notification window will dynamically adjust its height to accommodate the entire message without hiding any content or buttons.",
+    "upmenuNotificationUrl": "https://bibekchandsah.github.io/kiitcse/assets/image/developer.jpg"
 }
