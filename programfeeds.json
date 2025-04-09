@@ -7,5 +7,8 @@
     "upmenu_remaining_feedback_days": 86400,
     "upmenu_feedback_delete_status": 1800,
     "upmenu_auto_update": true,
-    "upmenu_updatecheck_interval": 1800
+    "upmenu_updatecheck_interval": 1800,
+    "upmenu_showNotification": true,
+    "upmenuNotificationMessage": "hello {self.username}, wishing you very happy new year.",
+    "upmenuNotificationUrl": "https://images.hdqwalls.com/wallpapers/mountain-scenery-morning-sun-rays-4k-kf.jpg"
 }
