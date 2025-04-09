@@ -9,6 +9,7 @@
     "upmenu_auto_update": true,
     "upmenu_updatecheck_interval": 1800,
     "upmenu_showNotification": true,
+    "upmenu_showNotification_interval": 1800,
     "upmenuNotificationMessage": "hello {username}\n, This is a very long message that demonstrates how text wrapping works in the notification window. The message will wrap within \n\n the specified width to ensure it fits properly. This ensures that even if the message is extremely long, the notification window will dynamically adjust its height to accommodate the entire message without hiding any content or buttons.",
     "upmenuNotificationUrl": "https://bibekchandsah.github.io/kiitcse/assets/image/developer.jpg"
 }
